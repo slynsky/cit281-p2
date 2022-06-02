@@ -6,93 +6,93 @@ This project was really good for getting me to think about the most efficiant, c
 
 ## Code
 ### p2-expressions.js
+/*<br>
+    CIT 281 Project 2<br>
+    Name: Sophia Lynsky<br>
+*/<br>
+
+// Returns a random number between min (inclusive) and max (exclusive)<br>
+
+const getRandomInteger = function(min, max) {<br>
+    return Math.floor(Math.random() * (max - min) + min);<br>
+}<br>
+
+const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");<br>
+
+//let result = "";<br>
+
+//let lengthOfOutputString = getRandomInteger(5, 26);<br>
+
+//Returns a random letter from the alphabet constant<br>
+
+const getRandomLetter = function() {<br>
+    let letter = getRandomInteger(0,alphabet.length);<br>
+    return alphabet[letter];<br>
+}<br>
+
+
+const getRandomString = function(minLength, maxLength) {<br>
+    let stringLength = Math.floor(Math.random() * (maxLength - minLength) + minLength);<br>
+    let text = ""<br>
+    for (i=0; i<stringLength; i++) {<br>
+        text += getRandomLetter();<br>
+    }<br>
+    return text;<br>
+}<br>
+
 /*
-    CIT 281 Project 2
-    Name: Sophia Lynsky
-*/
+for (let i = 0; i < lengthOfOutputString; i++) {<br>
+    result += getRandomLetter();<br>
+}<br>
+*/<br>
+console.log(getRandomString(10,20));<br>
 
-// Returns a random number between min (inclusive) and max (exclusive)
-
-const getRandomInteger = function(min, max) {
-    return Math.floor(Math.random() * (max - min) + min);
-}
-
-const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
-
-//let result = "";
-
-//let lengthOfOutputString = getRandomInteger(5, 26);
-
-//Returns a random letter from the alphabet constant
-
-const getRandomLetter = function() {
-    let letter = getRandomInteger(0,alphabet.length);
-    return alphabet[letter];
-}
-
-
-const getRandomString = function(minLength, maxLength) {
-    let stringLength = Math.floor(Math.random() * (maxLength - minLength) + minLength);
-    let text = ""
-    for (i=0; i<stringLength; i++) {
-        text += getRandomLetter();
-    }
-    return text;
-}
-
-/*
-for (let i = 0; i < lengthOfOutputString; i++) {
-    result += getRandomLetter();
-}
-*/
-console.log(getRandomString(10,20));
-
-const getSortedString = function(string) {
-    return string.split("").sort().join("")
-}
+const getSortedString = function(string) {<br>
+    return string.split("").sort().join("")<br>
+}<br>
 
 ### p2-random.js
-/*
-    CIT 281 Project 2
-    Name: Sophia Lynsky
-*/
+/*<br>
+    CIT 281 Project 2<br>
+    Name: Sophia Lynsky<br>
+*/<br>
 
-// Returns a random number between min (inclusive) and max (exclusive)
-function getRandomInteger(min, max) {
-    return Math.floor(Math.random() * (max - min) + min);
-}
+// Returns a random number between min (inclusive) and max (exclusive)<br>
+function getRandomInteger(min, max) {<br>
+    return Math.floor(Math.random() * (max - min) + min);<br>
+}<br>
 
-const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");<br>
 
-//let result = "";
+//let result = "";<br>
 
-let lengthOfOutputString = getRandomInteger(5, 26);
+let lengthOfOutputString = getRandomInteger(5, 26);<br>
 
-//Returns a random letter from the alphabet constant
-function getRandomLetter() {
-    let letter = getRandomInteger(0,alphabet.length);
-    return alphabet[letter];
-}
+//Returns a random letter from the alphabet constant<br>
+function getRandomLetter() {<br>
+    let letter = getRandomInteger(0,alphabet.length);<br>
+    return alphabet[letter];<br>
+}<br>
 
-function getRandomString(minLength, maxLength) {
-    let stringLength = Math.floor(Math.random() * (maxLength - minLength) + minLength);
-    let text = ""
-    for (i=0; i<stringLength; i++) {
-        text += getRandomLetter();
-    }
-    return text;
-}
+function getRandomString(minLength, maxLength) {<br>
+    let stringLength = Math.floor(Math.random() * (maxLength - minLength) + minLength);<br>
+    let text = ""<br>
+    for (i=0; i<stringLength; i++) {<br>
+        text += getRandomLetter();<br>
+    }<br>
+    return text;<br>
+}<br>
 
-/*
-for (let i = 0; i < lengthOfOutputString; i++) {
-    result += getRandomLetter();
-}
-*/
-console.log(getRandomString(10,20));
+/*<br>
+for (let i = 0; i < lengthOfOutputString; i++) {<br>
+    result += getRandomLetter();<br>
+}<br>
+*/<br>
+console.log(getRandomString(10,20));<br>
 
-function getSortedString(string) {
-    return string.split("").sort().join("")
-}
+function getSortedString(string) {<br>
+    return string.split("").sort().join("")<br>
+}<br>
 
 ### [Home Page](https://slynsky.github.io)
 
